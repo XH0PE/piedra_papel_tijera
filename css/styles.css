@@ -4,67 +4,67 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'DynaPuff', cursive;
 }
 
 body{
+    background-color: black;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+header{
+    background-color: rgb(121, 121, 121);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    flex-direction: column;
-}
-
-
-
-h1{
+    padding: 3rem;
+    font-size: 40px;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
     font-family: 'Nabla', cursive;
+}
+
+main{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-}
-
-h2{
-    display: flex;
-    justify-content: center;
-    font-family: 'Tilt Warp', cursive;
-}
-
-.ppt{
-    background-color: rgb(255, 241, 209);
-    height: 50vw;
-    width: 70vw;
-    padding: 30px;
-}
-
-.ppt .options{
-    display: flex;
-    justify-content: center
-}
-.ppt .options p{
-    font-size: 30px;
-    display: inline-block;
+    padding: 2rem;
     text-align: center;
 }
 
-.ppt .answer{
-    display: flex;
-    justify-content: center;
+.instrucciones{
+    margin-bottom: 2rem;
 }
 
-.ppt .answer h2{
-    display: inline-block;
-    justify-content: center;
+.marcador{
+    background-color: cadetblue;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    position: relative;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
-.ppt .score{
-    display: flex;
-    justify-content: center;
-
+.marcador .nombre{
+    position: absolute;
+    background-color: brown;
+    line-height: 1;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 2px solid;
 }
 
-.ppt .score p{
-    font-family: 'DynaPuff', cursive;
-    font-size: 20px;
-    display: inline-block;
-    
+.marcador .nombre-jugador{
+    right: 85%;
 }
 
+.marcador .nombre-computadora{
+    left: 85%;
+}
+
+.marcador .puntos{
+    font-size: 1.2rem;
+}

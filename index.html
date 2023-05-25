@@ -8,25 +8,42 @@
     <title>Piedra, Papel y Tijera</title>
 </head>
 <body>
-    <div class="ppt">
-        <h1>Juego de Piedra, Papel o Tijera</h1>
-        <br>
-        <h2>Selecciona una de las tres opciones</h2>
-        <div class="options">
-        <p>🪨</p>
-        <p>🧻</p>
-        <p>✂️</p>
+    
+<header>
+    Piedra, Papel o Tijera
+</header>
+<main>
+<p class="instrucciones" id="instrucciones">
+    El que tenga 5 puntos gana el juego
+</p>
+<div class="marcador">
+    <p class="nombre nombre-jugador">Usuario</p>
+    <p class="nombre nombre-computadora">Maquina</p>
+    <p class="puntos">
+        <span id="puntos-">0</span>
+        <span>-</span>
+        <span id="puntos-computadora">0</span>
+    </p>
+</div>
+<div class="elegir-arma" id="elegir-arma">
+    <h2>Selecciona una de las tres opciones</h2>
+    <div class="armas">
+        <button class="arma" id="piedra🪨">🪨</button>
+        <button class="arma" id="papel🧻">🧻</button>
+        <button class="arma" id="tijera✂️">✂️</button>
     </div>
-    <div class="answer">
-        <h2>El usuario eligio:</h2>
-        <h2>La maquina eligio:</h2>
-    </div>
-    <h1>Puntaje</h1>
-    <div class="score">
-        <p>Usuario: </p>
-        <p>Maquina: </p>
-    </div>
-    </div>
+</div>
+<div class="mensaje" id="mensaje">
+<p>
+    Usaste <span class="eleccion" id="eleccion-usuario">papel🧻</span>
+    <br>
+    y la maquina usó <span class="eleccion" id="eleccion-computadora">piedra🪨</span>
+</p>
+<p id="gana-punto">Ganaste un punto! 🔥</p>
+</div>
+<button class="btn" id="reiniciar">Reiniciar juego</button>
+</main>
+
 </body>
 <script src="./js/index.js"></script>
 </html>
