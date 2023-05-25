@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&family=Nabla&family=Tilt+Warp&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+
+
+h1{
+    font-family: 'Nabla', cursive;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Tilt Warp', cursive;
+}
+
+.ppt{
+    background-color: rgb(255, 241, 209);
+    height: 50vw;
+    width: 70vw;
+    padding: 30px;
+}
+
+.ppt .options{
+    display: flex;
+    justify-content: center
+}
+.ppt .options p{
+    font-size: 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+.ppt .answer{
+    display: flex;
+    justify-content: center;
+}
+
+.ppt .answer h2{
+    display: inline-block;
+    justify-content: center;
+}
+
+.ppt .score{
+    display: flex;
+    justify-content: center;
+
+}
+
+.ppt .score p{
+    font-family: 'DynaPuff', cursive;
+    font-size: 20px;
+    display: inline-block;
+    
+}
+
