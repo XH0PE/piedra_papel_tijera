@@ -40,6 +40,7 @@ main{
 }
 
 .marcador{
+    display: flex;
     background-color: cadetblue;
     padding: 1rem 2rem;
     border-radius: 1rem;
@@ -61,10 +62,63 @@ main{
     right: 85%;
 }
 
-.marcador .nombre-computadora{
+.marcador .nombre-pc{
     left: 85%;
 }
 
 .marcador .puntos{
     font-size: 1.2rem;
+}
+
+.elegir-arma{
+    margin-bottom: 2rem;
+}
+
+.elegir-arma h2{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+.armas{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.arma{
+    font-size: 2rem;
+    background-color: beige;
+    border: 0;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.mensaje{
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.mensaje .eleccion{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+border-radius: .25rem;
+padding-inline: .25rem;
+}
+
+.btn{
+    border: 0;
+    line-height: 1;
+    background-color: rgb(125, 255, 212);
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.disabled{
+    display: none;
 }
