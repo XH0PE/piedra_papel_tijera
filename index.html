@@ -12,9 +12,10 @@
 <header>
     Piedra, Papel o Tijera
 </header>
+<video src="./img/video.mp4" autoplay muted loop></video>
 <main>
 <p class="instrucciones" id="instrucciones">
-    El que tenga 5 puntos gana el juego
+    El que obtenga 5 puntos gana el juego
 </p>
 <div class="marcador">
     <p class="nombre nombre-jugador">Usuario</p>
@@ -28,12 +29,12 @@
 <div class="elegir-arma" id="elegir-arma">
     <h2>Selecciona una de las tres opciones</h2>
     <div class="armas">
-        <button class="arma" id="piedra🪨">🪨</button>
+        <button class="arma" id="piedra🥌">🥌</button>
         <button class="arma" id="papel🧻">🧻</button>
         <button class="arma" id="tijera✂️">✂️</button>
     </div>
 </div>
-<div class="mensaje" id="mensaje">
+<div class="mensaje disabled" id="mensaje">
 <p>
     Usaste <span class="eleccion" id="eleccion-usuario">papel🧻</span>
     <br>
@@ -41,7 +42,7 @@
 </p>
 <p id="gana-punto">Ganaste un punto! 🔥</p>
 </div>
-<button class="btn" id="reiniciar">Reiniciar juego</button>
+<button class="btn disabled" id="reiniciar">Reiniciar juego</button>
 </main>
 
 </body>
